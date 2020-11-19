@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<!-- SECTION -->
 <section class="weather-form">
     <h2>What's the weather like today?</h1>
 
@@ -8,6 +9,7 @@
         <fieldset>
             <legend>Please enter your information:</legend>
 
+<!-- CITY -->
             <p>
                 <label>
                     Please enter your city: <br>
@@ -15,6 +17,7 @@
                 </label>
             </p>
 
+<!-- UNITS -->
             <p>
                 Please choose your desired units: <br>
                 <label>
@@ -31,6 +34,7 @@
                 </label>
             </p>
 
+<!-- INPUT -->
             <p>
                 <input type="submit" value="Submit">
             </p>
@@ -38,12 +42,15 @@
         </fieldset>
     </form>
 </section>
+
+<!-- SECTION -->
 <section class="weather-form">
     <form action="historical_results" method="GET">
         <h2>See Historical Data</h1>
         <fieldset>
             <legend>Please enter your information:</legend>
 
+<!-- CITY -->
             <p>
                 <label>
                     Please enter your city: <br>
@@ -51,6 +58,7 @@
                 </label>
             </p>
 
+<!-- UNITS -->
             <p>
                 Please choose your desired units: <br>
                 <label>
@@ -67,6 +75,7 @@
                 </label>
             </p>
 
+<!-- DATE -->
             <p>
                 <label>
                     Please choose the date you'd like info on: <br>
@@ -75,6 +84,7 @@
                 </label>
             </p>
 
+<!-- INPUT -->
             <p>
                 <input type="submit" value="Submit">
             </p>

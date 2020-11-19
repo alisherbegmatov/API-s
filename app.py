@@ -93,6 +93,7 @@ def results():
         'date': datetime.now(),
         'city': city,
         'description': result_json['weather'][0]['description'],
+        'icon' : result_json['weather'][0]['icon'],
         'temp': result_json['main']['temp'],
         'humidity': result_json['main']['humidity'],
         'wind_speed': result_json['wind']['speed'],
@@ -190,6 +191,7 @@ def historical_results():
         'units': units,
         'units_letter': units_letter, # should be 'C', 'F', or 'K'
         'description': result_json['current']['weather'][0]['description'],
+        'icon' : result_json['current']['weather'][0]['icon'],
         'temp': result_json['current']['temp'],
         'min_temp': get_min_temp(result_hourly),
         'max_temp': get_max_temp(result_hourly)

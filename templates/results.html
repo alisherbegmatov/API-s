@@ -1,11 +1,16 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<!-- SECTION -->
 <section>
     {#
         TODO: Replace the hard-coded city and date below with data from the 
         server 
     #}
+
+<!-- WEATHER ICON -->
+    <img src="http://openweathermap.org/img/wn/{{icon}}@2x.png">
+
     <h1>Weather in San Francisco</h1>
     <p>on Saturday, {{date.strftime("%m/%d/%Y")}}</p>
     
@@ -13,6 +18,8 @@
         TODO: Add the temperature, description, humidity, wind speed, sunrise,
         & sunset below. Replace 'F' with the appropriate units.
     #}
+
+<!-- LIST -->
     <ul>
         <li>Temperature: {{temp}}° {{units_letter}}</li>
         <li>Description: {{description}} </li>
@@ -21,6 +28,7 @@
         <li>Sunrise: {{sunrise.strftime("%H:%M:%S")}}</li>
         <li>Sunset: {{sunset.strftime("%H:%M:%S")}}</li>
     </ul>
+
     
 </section>
 {% endblock %}
